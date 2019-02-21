@@ -6,7 +6,9 @@
     </head>
     <body>
         <?php
-        // put your code here
+            include("kockadobas.php");
+            $friss=new kockadobas(6);
+            $friss->kiiras();
         ?>
     </body>
 </html>

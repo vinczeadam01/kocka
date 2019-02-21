@@ -4,10 +4,8 @@
 	// ez hozza létre a sorsolást
 	function __construct($hanyas)
 	{
-		if($hanyas==5)
-		{
-			$this->hanyas=5;
-		}
+            $this->hanyas=$hanyas;
+		
 	}
 	function dobas()
 	{
@@ -15,5 +13,8 @@
 		$dobottszam=rand(1,$this->hanyas);
 		return $dobottszam;
 	} 
- 
-
+        function kiiras()
+        {
+            echo $this->dobas();
+        }
+    }
