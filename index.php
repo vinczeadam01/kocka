@@ -6,8 +6,9 @@
     </head>
     <body>
         <?php
+            $szam=$_GET["szam"];
             include("kockadobas.php");
-            $friss=new kockadobas(6);
+            $friss=new kockadobas($szam);
             $friss->kiiras();
         ?>
     </body>
